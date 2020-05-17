@@ -1,0 +1,109 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Arial';
+	overflow: hidden;
+}
+
+.navbar
+{
+	padding: 1rem;
+	background-color: #cc00ff;
+
+
+	display: flex;
+	flex-grow: 1;
+
+}
+
+.navbar ul{
+	text-align: center;
+
+	display: flex;
+	flex: 1;
+}
+
+li{
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	font-weight: bold;
+	font-style: italic;
+
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+}
+li:hover,
+li:focus{
+	box-shadow: 0 1rem #cc99ff;
+	transition: 0.5s linear;
+}
+
+.navbar button{
+	border: none;
+	background: none;
+	cursor: pointer;
+	background-color: #ff3399;
+
+	font-size: 1rem;
+	font-weight: bold;
+	box-shadow: 0.2rem 0.2rem brown;
+}
+.navbar button:hover,
+.navbar button:click
+{
+	margin-top: 0.2rem;
+	box-shadow: none;
+	transition: 1s ease;
+}
+
+
+input[type=number] /*removes the arrows from the number input*/
+{
+	appearance:none;
+	-moz-appearance:textfield;
+
+	text-align: center;
+	border-radius: 0.25rem;
+	border: none;
+	padding: 0.5rem;
+	box-shadow: 0.2rem 0.2rem rgba(0,0,0,0.1);
+}
+
+.container
+{
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.left{
+	font-size: 7em;
+	cursor: default;
+}
+
+#timerseconds{
+	display: inline-block;
+	/*flex is not working with transitions*/
+	transition: 0.5s ease-in-out;
+}
+
+#timerminutes{
+	display: inline-block;
+	transition: 0.5s ease-in-out;
+}
+
+.overat{
+	font-size: 1.5em;
+}
+
+#over{
+	font-style: italic;
+}

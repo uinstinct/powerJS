@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Understanding JavaScript's Capture</title>
+</head>
+<body class="bod">
+  <div class="one">
+    <div class="two">
+      <div class="three">
+      </div>
+    </div>
+  </div>
+  <button class="btn">Click Once</button>
+</body>
+
+<style>
+  html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  *, *:before, *:after { 
+    box-sizing: inherit;
+  }
+
+  div {
+    width: 100%;
+    padding: 100px;
+  }
+
+  .one {
+     background: rgb(13,36,0);
+     background: radial-gradient(circle, rgba(13,36,0,1) 0%, rgba(125,133,6,1) 52%, rgba(0,212,255,1) 100%); 
+  }
+
+  .two {
+     background: rgb(131,58,180);
+     background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
+  }
+
+  .three {
+     background: rgb(238,174,202);
+     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(181,184,218,1) 50%, rgba(148,187,233,1) 100%); 
+  }
+</style>
+
+
+<script>
+  'use strict';
+  var divs=document.querySelectorAll("div");
+  var btn = document.querySelector(".btn");
+  function triggerThis () {
+    console.log(this);
+  }
+  function triggerWithoutPropagation(event)
+  {
+    event.stopPropagation()
+    console.clear();
+    console.log(this);
+  }
+
+
+  divs.forEach(div=>div.addEventListener('click', triggerThis)); // here parent elements are also fired
+  divs.forEach(div=>div.addEventListener('click', triggerThis, {capture:true}));//capture prevents the event from firing up their parent elements
+  divs.forEach(div=>div.addEventListener('dblclick', triggerWithoutPropagation));
+  btn.addEventListener('click', ()=>btn.innerText="Cannot be clicked again", {once:true}); // once:true prevents the button from getting triggered again
+
+</script>
+</body>
+</html>

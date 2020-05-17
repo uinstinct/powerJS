@@ -1,0 +1,44 @@
+:root
+{
+	/*these are defined in the document root*/
+	--base: orange;
+	--spacing: 3rem;
+	--blur: 4rem;
+}
+
+img
+{
+	padding: var(--spacing);
+	background: var(--base);
+	filter: blur(var(--blur));
+}
+
+
+.hl
+{
+	color: var(--base);
+	font-size: 1.7em;
+}
+
+body
+{
+	text-align: center;
+	background-color: black;
+	color: var(--base);
+	font-family: 'helvetica neue';
+	font-weight: 100;
+	font-size: 3rem;
+}
+
+.controls
+{
+	margin-bottom: 1rem;
+}
+
+input
+{
+	display: block;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 2rem;
+}

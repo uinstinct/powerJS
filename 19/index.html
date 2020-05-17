@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CamBooth</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<main>
+		<div class="videocontainer">
+			<video class="purevideo"></video>
+		</div>
+		<div class="strap"></div>
+		<canvas class="cambooth"></canvas>
+		<div class="controlpanel">
+			<label for="rmin">Red Min: </label>
+			<input type="range" name="rmin" min="0" max="255">
+			<label for="rmax">Red Max: </label>
+			<input type="range" name="rmax" min="0" max="255">
+			<br>
+			<label for="bmin">Blue Min: </label>
+			<input type="range" name="bmin" min="0" max="255">
+			<label for="bmax">Blue Max: </label>
+			<input type="range" name="bmax" min="0" max="255">
+			<br>
+			<label for="gmin">Green Min: </label>
+			<input type="range" name="gmin" min="0" max="255">
+			<label for="gmax" name="gmax">Green Max: </label>
+			<input type="range" name="gmax" min="0" max="255">
+		</div>
+		<div class="functionpanel">
+			<button id="ghastly">Ghastly Effect</button>
+			<button id="redeffect">Red Effect</button>
+			<button id="greenscreen">Green Screen</button>
+			<button id="takephoto">Snap a photo!</button>
+		</div>
+	</main>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

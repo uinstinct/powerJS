@@ -1,0 +1,51 @@
+:root{
+	font-family: cursive;
+	font-size: 1.4rem;
+}
+
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #66ff66;
+}
+
+.notepad{
+	position: relative;
+	background-color: white;
+
+	margin: 5px;
+	width: 60%;
+	padding: 1rem;
+	padding-left: 5.7rem;
+
+	line-height: 1.2;
+	border-radius: 10%;
+	border-left: 2px solid green;
+
+	box-shadow: 0.7rem 0.7rem rgba(0,0,0,0.2);
+}
+
+
+.notepad:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  top: 0;
+  left: 5rem;
+  bottom: 0;
+  border: 1px solid red;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+p{
+	border-top: 1px solid lightblue;
+	border-bottom: 1px solid lightblue;
+	padding: 3px;
+	margin-bottom: 2rem;
+}
+
+p:last-child{
+	margin-bottom: 1rem;
+}

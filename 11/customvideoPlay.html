@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Video Player</title>
+  <link rel="stylesheet" href="customVideoPlay.css">
+</head>
+<body>
+
+   <div class="player">
+     <video class="player__video viewer" src="https://drive.google.com/uc?id=1hllpmA8cy3-qnwjK35ec0o9L2uBIpioL"></video>
+
+     <div class="player__controls">
+       <div class="progress">
+        <div class="progress__filled"></div>
+       </div>
+       <button class="player__button toggle" title="Toggle Play">►</button>
+       <!-- the name property is important because we can use it to change the video's properties -->
+       <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+       <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+       <button data-skip="-10" class="player__button">« 10s</button>
+       <button data-skip="25" class="player__button">25s »</button>
+     </div>
+   </div>
+
+  <script src="customVideoPlay.js"></script>
+</body>
+</html>

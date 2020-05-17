@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Custom Countdown</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<nav class="navbar">
+		<ul>
+			<li data-time='10'>Lightning 10s</li>
+			<li data-time='30'>Thunder 30s</li>
+			<li data-time='60'>Quick 1m</li>
+			<li data-time='300'>Busy 5m</li>
+		</ul>
+		<form name="customForm">
+			<input type="number" name="minutes">
+			<button>GO</button>
+		</form>
+	</nav>
+
+	<div class="container">
+		<div class="left">
+			<span id="timerminutes">1:</span><span id="timerseconds">05</span>
+		</div>
+		<div class="overat">
+			<span id="over"></span>
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

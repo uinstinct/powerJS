@@ -1,0 +1,86 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0; /* Important! */
+  font-family: sans-serif;
+  background: #C9FFBF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFAFBD, #C9FFBF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+nav{
+  position: fixed;
+  /*for centering the navbar*/
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  /*height and width are 0 so that the navbar does not occupy the entire body*/
+  height: 0;
+  width: 0;
+
+  background-color: lightgreen;
+
+  margin-top: -50px;
+  /*z-index: 3;*/
+}
+
+.wrapper {
+  margin: 0 auto;
+  margin-top: 90px;
+  max-width: 500px;
+  font-size: 20px;
+  line-height: 2;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  background: rgba(0,0,0,0.07);
+  border-radius: 20px;
+}
+
+nav a
+{
+  background:none;
+}
+
+.highlight {
+  transition: all 0.2s; /* responsible for the smooth motion*/
+  border-bottom: 2px solid white;
+  position: absolute;
+  top: 0;
+  background: white;
+  left: 0;
+  z-index: -1;
+  border-radius: 20px;
+  display: block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.menu {
+  z-index: 2;
+  background-color: lightblue;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin:55px 0;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 5px;
+  margin: 0 20px;
+  color: black;
+}

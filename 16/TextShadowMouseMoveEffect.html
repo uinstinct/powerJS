@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shadow on Mouse Move</title>
+</head>
+<body>
+
+  <div class="hero">
+    <h1 contenteditable>INSTINCT</h1>
+  </div>
+
+  <style>
+  html {
+    color: black;
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .hero {
+    /*effect area*/
+    text-align: center;
+    color: black;
+    width: 50%;
+    height: 50%;
+    background-color: lightblue;
+  }
+
+  h1 {
+    text-shadow: 10px 10px 0 rgba(0,0,0,1);
+    font-size: 100px;
+  }
+  </style>
+<script type="text/javascript" src="TextShadowMouseMoveEffect.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}body
+{
+	background-color: lightgreen;
+}
+.inbox
+{
+	background-color: white;
+	margin: 50px auto;
+	max-width: 400px;
+	border-radius: 0.5%;
+	box-shadow: lightyellow 1rem 1rem;
+}
+.item
+{
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid grey;
+}
+input[type="checkbox"]
+{
+	margin: 1.2rem;
+}
+input:checked + p
+{
+	background-color: lightgrey;
+	text-decoration: line-through;
+}
+p
+{
+	margin: 0;
+	padding: 20px;
+	transition: background ease-in-out 0.5s;
+	border-left: 1px solid grey;
+	font-family: 'helvetica neue';
+	font-size: 1.2rem;
+	font-weight: 250;
+	flex-grow: 1;
+}

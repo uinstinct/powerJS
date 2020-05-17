@@ -1,0 +1,130 @@
+body
+{
+	height: 100vh;
+	width: 100vw;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+main
+{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.panel{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin: 0.5rem;
+}
+.panel button
+{
+	box-shadow: 0.4rem 0.4rem #1f2e2e;
+	background-color: black;
+	color: white;
+
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0.35rem 0;
+ 	padding: 0.25rem;
+ 	border: none;
+
+ 	cursor: pointer;
+	transition: 0.25s ease-in-out;
+}
+.panel button:focus,
+.panel button:hover
+{
+	box-shadow: none;
+	border: 3px solid black;
+}
+
+
+.start
+{
+	margin: 0.5rem;
+}
+.start button
+{
+	background-color: #152638;
+	color: white;
+	font-weight: bolder;
+	border: none;
+	box-shadow: -0.4rem 0.4rem #070d13;
+	padding: 0.25rem;
+
+	transition: 0.1s linear;
+
+}
+.start button:focus,
+.start button:hover
+{
+	cursor: pointer;
+	box-shadow: none;
+	border: 3px solid black;
+}
+
+.game
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 5rem;
+	grid-row-gap: 10rem;
+
+	margin-top: 10rem;
+	transition: 1s linear;
+}
+.grass
+{
+	position: relative;
+	background-image: url('grass.svg');
+	background-size: contain;
+	height: 100px;
+	width: 100px;
+	z-index: 2;
+}
+.grass .rabbit
+{
+	background-image: url('rabbit.svg');
+	background-position: bottom;
+	background-size: 90%;;
+	background-repeat: no-repeat;
+
+	z-index: -1;
+	height: 100px;
+	width: 100px;
+	transition: all 0.1s;
+
+	position: absolute;
+	top: 100%;
+	visibility: hidden;
+}
+.grass.up .rabbit
+{
+	cursor: pointer;
+	top: -25px;
+	visibility: visible;
+}
+
+
+.message
+{
+	position: absolute;
+	text-align: center;
+	width: 30%;
+	height: 10%;
+	left: 37.5%;
+	top: 1%;
+	box-shadow: 0 0 0.5rem #ccc;
+	line-height: 1.5;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

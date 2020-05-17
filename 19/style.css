@@ -1,0 +1,123 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background: #667db6;
+	background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); 
+	box-sizing: border-box;
+}
+main
+{
+	width: 100vw;
+	height: 100vh;
+
+	position: relative;
+}
+
+.purevideo
+{
+	position: fixed;
+	top: 0.5rem;
+	left: 0.5rem;
+
+	width: 10rem;
+	height: 6rem;
+	border-radius: 10%;
+	background-color: black;
+	box-shadow: 0 0 1rem lightgrey;
+}
+
+.strap
+{
+	position: fixed;
+	bottom: 0.5rem;
+	left: 0.5rem;
+
+
+	height: 75vh;
+	width: 10rem;
+	padding: 0.5rem;
+
+	box-shadow: 0 0 1px lightyellow;
+	overflow-y: scroll;
+}
+.strap a
+{
+	margin: 0.5rem;
+}
+.strap img
+{
+	width: 8rem;
+	height: 15vh;
+}
+
+.controlpanel
+{
+	position: fixed;
+	top: 0.5rem;
+	right: 0.5rem;
+
+	width: 16rem;
+	height: 10rem;
+
+	padding: 0.2rem;
+	background: #fc00ff;
+	background: linear-gradient(to right, #00dbde, #fc00ff);
+	border-radius: 10%;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.controlpanel br
+{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.controlpanel input
+{
+	vertical-align: middle;
+	text-align: center;
+}
+
+.functionpanel
+{
+	position: fixed;
+	bottom: 0.5rem;
+	right: 0.5rem;
+
+	width: 15rem;
+	height: 10rem;
+
+	color: white
+	padding: 1.2rem;
+	background: #00bf8f; 
+	background: linear-gradient(to right, #001510, #00bf8f);
+	border-radius: 10%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.functionpanel button
+{
+	margin: 0 1rem;
+	cursor: pointer;
+	border: none;
+	background: lightgreen;
+	padding: 0.2rem;
+	box-shadow: 0.3rem 0.3rem green;
+}
+
+.cambooth
+{
+	position: fixed;
+	top: 0.5rem;
+	left: 12rem;
+	border: 1px solid black;
+	margin: 1rem;
+
+	width: 60%;
+	height: 90%;
+}
