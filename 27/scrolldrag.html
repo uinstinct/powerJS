@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Scroll Drag</title>
+	<link rel="stylesheet" type="text/css" href="scrolldrag.css">
+</head>
+<body>
+	<div class="panels">
+		<div class="panel">01</div>
+		<div class="panel">02</div>
+		<div class="panel">03</div>
+		<div class="panel">04</div>
+		<div class="panel">05</div>
+		<div class="panel">06</div>
+		<div class="panel">07</div>
+		<div class="panel">08</div>
+		<div class="panel">09</div>
+		<div class="panel">10</div>
+		<div class="panel">11</div>
+		<div class="panel">12</div>
+		<div class="panel">13</div>
+		<div class="panel">14</div>
+		<div class="panel">15</div>
+		<div class="panel">16</div>
+		<div class="panel">17</div>
+		<div class="panel">18</div>
+		<div class="panel">19</div>
+		<div class="panel">20</div>
+	</div>
+</body>
+<script type="text/javascript">
+	const scroller = document.querySelector('.panels');
+	var isDown = false;
+	var startX;
+	var scrollLeft;
+
+	scroller.addEventListener('mousedown', e=>{
+		isDown=true;
+		scroller.classList.add('active');
+		startX=e.pageX-scroller.offsetLeft;
+		scrollLeft=scroller.scrollLeft;
+	});
+
+	scroller.addEventListener('mouseleave', ()=>{
+		isDown=false;
+		scroller.classList.remove('active');
+	})
+
+	scroller.addEventListener('mouseup', ()=>{
+		isDown=false;
+		scroller.classList.remove('active');
+	});
+
+
+	scroller.addEventListener('mousemove', e=>{
+		if (!isDown) {return;}
+		e.preventDefault();
+		const traversed = (e.pageX-scroller.offsetLeft-startX)*1;
+		scroller.scrollLeft=scrollLeft-traversed;
+	});
+</script>
+</html>

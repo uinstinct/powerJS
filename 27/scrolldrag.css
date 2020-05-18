@@ -1,0 +1,72 @@
+html
+{
+	background-color: #00ffff;
+	background-size: cover;
+}
+
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 100vh;
+	font-size: 1.5rem;
+	margin: 0;
+}
+
+.panels
+{
+	height: 50rem;
+	padding: 8rem;
+	width: 100%;
+	border: 0.1rem solid white;
+
+	overflow-x: scroll;
+	overflow-y: hidden;
+
+	white-space: nowrap;
+	user-select: none;
+	cursor: pointer;
+
+	transition: all 1s;
+	transform: scale(0.9);
+	will-change: transform;
+
+	position: relative;
+	background-color: rgba(153, 204, 255, 0.5);
+	font-size: 0;
+	perspective: 500px;
+}
+
+.panels.active
+{
+	background-color: rgba(153, 204, 255, 1);
+	cursor: grabbing;
+	transform: scale(1);
+}
+
+.panel
+{
+	width: 12rem;
+	height: 100%;
+	background-color: lightblue;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 5rem;
+	font-weight: bolder;
+	color: white;
+	box-shadow: inset 0 0 0 1rem rgba(255, 102, 255,0.5);
+}
+
+.panel:nth-child(even)
+{
+	transform: scaleX(1.5) rotateY(40deg);
+}
+.panel:nth-child(odd)
+{
+	transform: scaleX(1.5) rotateY(-40deg);
+}
