@@ -88,16 +88,4 @@ In the project, where *a server is required*, just run `serve` in your *__termin
 By default, the page will be served on [localhost:5000](http://localhost:5000).
 
 
-## Contributing
-
-This repository is welcome to all kinds of issuses and pull requests.
-
-If you *find a bug* or *encounter a problem* anywhere, __draft an issue__ by [clicking here](https://github.com/uinstinct/powerJS/issues/new)
-
-If you *made an improvement* or *resolved a problem*, you can send a **pull request** by creating it in *your forked repo* or by simply [clicking here](https://github.com/uinstinct/powerJS/pulls).
-
-You will be soon notified once your issue or pull request is reviewed.
-
-
-
 *If you liked my collection, you may give this repository a star by clicking above.*
