@@ -15,10 +15,10 @@ The entire collection can be found on [this link](https://codepen.io/collection/
   1. [Drum Beat](https://codepen.io/uinstinct/full/ExVQovR)
   2. [Clocking](https://codepen.io/uinstinct/full/ZEbrvav)
   3. [Interactive Slider Change](https://codepen.io/uinstinct/full/eYpVyyV)
-  4. [Array Exercise](/04/arrayExercise.js)
+  4. [ArrayFun 1](/04/arrayExercise.js)
   5. [Flex Panel Gallery](https://codepen.io/uinstinct/full/eYpVyyV)
   6. [AJAX Filter](/06)
-  7. [ArrayExcersie2](/07/arrayExercise2.html)
+  7. [ArrayFun 2](/07/arrayExercise2.html)
   8. [Canvas Draw](https://codepen.io/uinstinct/full/gOavoyM)
   9. [Console Tricks](/09/consoleTools.html)
   10. [Checking Box](https://codepen.io/uinstinct/full/WNQMdBE)
@@ -86,17 +86,6 @@ You can do this simply by opening up your *__terminal__* and running :
 In the project, where *a server is required*, just run `serve` in your *__terminal__*.
 
 By default, the page will be served on [localhost:5000](http://localhost:5000).
-
-
-## Contributing
-
-This repository is welcome to all kinds of issuses and pull requests.
-
-If you *find a bug* or *encounter a problem* anywhere, __draft an issue__ by [clicking here](https://github.com/uinstinct/powerJS/issues/new)
-
-If you *made an improvement* or *resolved a problem*, you can send a **pull request** by creating it in *your forked repo* or by simply [clicking here](https://github.com/uinstinct/powerJS/pulls).
-
-You will be soon notified once your issue or pull request is reviewed.
 
 
 
